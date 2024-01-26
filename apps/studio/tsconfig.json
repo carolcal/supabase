@@ -17,15 +17,18 @@
     "downlevelIteration": true,
     "incremental": true,
     "paths": {
-      "@ui/*": ["./../../packages/ui/src/*"], // handle ui package paths
+      // handle ui package paths
+      "@ui/*": ["./../../packages/ui/src/*"],
+      // handle ui-patterns package paths
+      "@ui-patterns/*": ["./../../packages/ui-patterns/src/*"]
     },
     "useDefineForClassFields": true,
     "plugins": [
       {
-        "name": "next",
-      },
-    ],
+        "name": "next"
+      }
+    ]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules"]
 }

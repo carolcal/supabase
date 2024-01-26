@@ -3,7 +3,10 @@
     "baseUrl": ".",
     "paths": {
       "~/*": ["./*"],
-      "@ui/*": ["./../../packages/ui/src/*"], // handle ui package paths
+      // handle ui package paths
+      "@ui/*": ["./../../packages/ui/src/*"],
+      // handle ui-patterns package paths
+      "@ui-patterns/*": ["./../../packages/ui-patterns/src/*"]
     },
     "downlevelIteration": true,
     "target": "es5",
@@ -22,10 +25,10 @@
     "incremental": true,
     "plugins": [
       {
-        "name": "next",
-      },
-    ],
+        "name": "next"
+      }
+    ]
   },
   "exclude": ["node_modules", "supabase"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"]
 }
